@@ -27,9 +27,15 @@ public class RegistrationFormTask {
     @Test
     public void test1() {
 
+        // ==>>     CONTAINS METHOD  //tagname[contains(@name,'first')]
+
+        // ==>>  STARTS WITH ==>>   //tagname[starts-with(@name,'first')]
+        // ==>>  ENDS WITH ==>>   //tagname[ends-with(@name,'first')]
+
+
         Faker faker = new Faker();
 
-        WebElement firstNameArea = driver.findElement(By.xpath("//input[@name='firstname']"));
+        WebElement firstNameArea = driver.findElement(By.xpath("//input[starts-with(@name,'first')]"));
 
         firstNameArea.sendKeys(faker.name().firstName());
 
@@ -40,6 +46,10 @@ public class RegistrationFormTask {
         WebElement userNameTextArea = driver.findElement(By.xpath("//input[@name='username']"));
 
         userNameTextArea.sendKeys(faker.bothify("???##??####???"));  // #: gives us numbers; ? : gives us letters
+
+        String attribute = driver.findElement(By.xpath("//input[contains(@placeholder,'user')]")).getAttribute("class");
+
+        System.out.println("attribute = " + attribute);
 
         WebElement emailTextArea = driver.findElement(By.xpath("//input[@name='email']"));
 
