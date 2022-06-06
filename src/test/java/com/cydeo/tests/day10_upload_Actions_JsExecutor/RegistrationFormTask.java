@@ -1,11 +1,13 @@
 package com.cydeo.tests.day10_upload_Actions_JsExecutor;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -92,6 +94,16 @@ public class RegistrationFormTask {
         WebElement signInButton = driver.findElement(By.id("wooden_spoon"));
 
         signInButton.click();
+
+        BrowserUtils.sleep(2);
+
+        String actual = driver.findElement(By.tagName("p")).getText();
+
+        String expected="You've successfully completed registration!";
+
+        Assert.assertEquals(actual,expected,"actual and expected did not match");
+
+
 
 
     }

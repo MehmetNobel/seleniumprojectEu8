@@ -46,5 +46,15 @@ public class Driver {
 
     }
 
+    public static void closeDriver(){
+        if(driver!=null){
+            driver.quit();  // will close all the tabs; we destroy the current driver.But current driver is not null.
+            driver=null;  // in here we assign the driver as null to able to create new driver in following tabs/sessions.
+        }
+
+    }
+
+
+
 
 }
