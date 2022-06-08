@@ -9,9 +9,32 @@ import org.testng.annotations.Test;
 
 public class DragAndDrop {
 
+    @Test
+    public void test1(){
+
+        Driver.getDriver().get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
+
+        WebElement madrid = Driver.getDriver().findElement(By.id("box7"));
+
+        WebElement spain = Driver.getDriver().findElement(By.id("box107"));
+
+        Actions actions=new Actions(Driver.getDriver());
+
+        actions.dragAndDrop(madrid,spain).perform();
+
+        Driver.closeDriver();
+
+
+    }
+
+
+
+
+
+
 
     @Test
-    public void test() {
+    public void test2() {
 
         Driver.getDriver().get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 
@@ -41,7 +64,7 @@ public class DragAndDrop {
 
 
     @Test
-    public void test2(){
+    public void test3(){
 
         Driver.getDriver().get("https://www.amazon.com/");
 
@@ -52,6 +75,35 @@ public class DragAndDrop {
         Actions actions=new Actions(Driver.getDriver());
 
         actions.moveToElement(toy).perform();
+
+
+
+    }
+
+    @Test
+    public void test4(){
+
+        Driver.getDriver().get("https://www.hepsiburada.com/");
+
+        BrowserUtils.sleep(2);
+
+       /* Alert alert= Driver.getDriver().switchTo().alert();
+
+        BrowserUtils.sleep(2);
+        alert.accept();
+
+        */
+
+        WebElement car = Driver.getDriver().findElement(By.xpath("//li[@class='sf-MenuItems-WulWXvlfIAwNiOUGY7FP'][5]"));
+
+        Actions actions=new Actions(Driver.getDriver());
+
+        actions.moveToElement(car).perform();
+
+        BrowserUtils.sleep(2);
+
+        actions.contextClick(car).perform();
+
 
 
 
