@@ -1,6 +1,6 @@
 package com.cydeo.tests.day13_PracticeAndReview;
 
-import com.cydeo.pages.CydeoDynamicControlsPage;
+import com.cydeo.pages_Lecture.CydeoDynamicControlsPage;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

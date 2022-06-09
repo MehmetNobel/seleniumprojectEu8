@@ -1,4 +1,4 @@
-package com.cydeo.pages;
+package com.cydeo.pages_Lecture;
 
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebElement;

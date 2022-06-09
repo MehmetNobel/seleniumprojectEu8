@@ -1,6 +1,6 @@
 package com.cydeo.tests.day12_pomDesign_ExplictWait;
 
-import com.cydeo.pages.DynamicLoadingExample1Page;
+import com.cydeo.pages_Lecture.DynamicLoadingExample1Page;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
