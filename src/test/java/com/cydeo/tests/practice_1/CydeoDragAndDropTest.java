@@ -1,6 +1,6 @@
 package com.cydeo.tests.practice_1;
 
-import com.cydeo.pages_Practice.CydeoDragAndDropPage;
+import com.cydeo.pages_Practice_1.CydeoDragAndDropPage;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

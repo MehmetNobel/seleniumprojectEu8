@@ -1,6 +1,6 @@
 package com.cydeo.tests.practice_1;
 
-import com.cydeo.pages_Practice.CydeoLibraryHomePageOFB;
+import com.cydeo.pages_Practice_1.CydeoLibraryHomePageOFB;
 import com.cydeo.utilities.BrowserUtils;
 import org.testng.annotations.Test;
 

@@ -1,6 +1,6 @@
 package com.cydeo.tests.practice_1;
 
-import com.cydeo.pages_Practice.FileUploadPage;
+import com.cydeo.pages_Practice_1.FileUploadPage;
 import org.testng.annotations.Test;
 
 public class FileUpload {

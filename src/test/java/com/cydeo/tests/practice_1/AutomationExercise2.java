@@ -1,6 +1,6 @@
 package com.cydeo.tests.practice_1;
 
-import com.cydeo.pages_Practice.AutomationExerciseHomePage;
+import com.cydeo.pages_Practice_1.AutomationExerciseHomePage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;

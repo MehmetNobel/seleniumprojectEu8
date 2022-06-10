@@ -1,6 +1,6 @@
 package com.cydeo.tests.practice_1;
 
-import com.cydeo.pages_Practice.AutoExeTrial1Page;
+import com.cydeo.pages_Practice_1.AutoExeTrial1Page;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.Alert;
