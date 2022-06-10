@@ -1,4 +1,4 @@
-package com.cydeo.tests.practice;
+package com.cydeo.tests.practice_1;
 
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
